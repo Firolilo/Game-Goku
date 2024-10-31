@@ -6,10 +6,20 @@ dmg  = 20;
 //--- Control ---//
 
 ui = 1;
-state = "prepare_att"; //prepare_att, punch, move
-side_right = 1;
+state = "intro"; //prepare_att, punch, move
+side_right = 0;
 
 
 //Kame
 created = 0;
-alarm[0] = 1.5 * room_speed;
+
+//Lockin
+
+lockin = 0;
+lockfinish = 0;
+attacks = 0;
+
+
+intro = 1;
+
+randomize();

@@ -10,15 +10,7 @@ if(state == "dash")
 }
 else
 {
-	switch(irandom(1))
-	{
-		case 0:	
-			state = "prepare_att";
-		break;
-		case 1:
-			state = "prepare_tp";
-		break;
-	}
-
-	alarm[0] = 20;
+	state = "tp";
+	c_tp_sound();
+	alarm[11] = 20;
 }

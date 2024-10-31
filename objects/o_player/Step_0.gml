@@ -1,5 +1,6 @@
 if(!dead){
 // ------- INPUT ------
+	if (keyboard_check(vk_escape)) game_end();
 
 	if (keyboard_check(ord("D")))
 	{      
