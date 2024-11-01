@@ -37,7 +37,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemy",
-    "path": "folders/Objects/enemy.yy",
+    "name": "Goku UI",
+    "path": "folders/Objects/enemy/Goku UI.yy",
   },
 }
