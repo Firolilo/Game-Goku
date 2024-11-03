@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_persona",
   "spriteId": {
-    "name": "s_arsene",
-    "path": "sprites/s_arsene/s_arsene.yy",
+    "name": "s_messiah",
+    "path": "sprites/s_messiah/s_messiah.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
