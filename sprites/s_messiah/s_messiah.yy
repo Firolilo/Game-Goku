@@ -36,6 +36,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bcce2f1a-852c-4cb6-8b66-aa6d084065f8",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f5ffcf58-56aa-4f98-9d21-1666a35f1284",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"390676b7-ab69-4fee-ab31-dc5d0b69a0a9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f214122-8aa7-43c9-81f6-87e0c3ff1bd4",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -47,7 +48,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 8.0,
+    "length": 9.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -60,6 +61,7 @@
             {"id":"03501305-6b2c-4632-b19a-d0a2e306c118","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bcce2f1a-852c-4cb6-8b66-aa6d084065f8","path":"sprites/s_messiah/s_messiah.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"060453e6-9983-42b2-adc5-d472688a7503","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f5ffcf58-56aa-4f98-9d21-1666a35f1284","path":"sprites/s_messiah/s_messiah.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1659ad95-79aa-4060-9027-4a6b6114898b","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"390676b7-ab69-4fee-ab31-dc5d0b69a0a9","path":"sprites/s_messiah/s_messiah.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6ed6f144-7316-47aa-89f7-3552b059fc68","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9f214122-8aa7-43c9-81f6-87e0c3ff1bd4","path":"sprites/s_messiah/s_messiah.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

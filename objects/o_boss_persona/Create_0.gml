@@ -5,7 +5,11 @@ dmg  = 20;
 
 //--- Control ---//
 
-state = "prepare_att"; //prepare_att, punch, move
-side_right = 0;
+state = "Wildcard"; //Wildcard, Investigator, Trickster
+attack = 0;
+alarm[0] =  30;
 
+
+// Zio - Investigator
+zio = 0;
 randomize();
