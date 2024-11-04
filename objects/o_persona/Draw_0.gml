@@ -10,6 +10,7 @@ switch(o_boss_persona.state)
 	break;
 	case "Trickster":
 		sprite_index = s_arsene;
+		if(image_index > 5) image_index--;
 	break;
 }
 

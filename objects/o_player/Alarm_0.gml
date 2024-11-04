@@ -1,2 +1,2 @@
-/// @description Reload
-canShoot=1;
+/// @description draw card
+see_card=0;

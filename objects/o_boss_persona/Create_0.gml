@@ -5,11 +5,18 @@ dmg  = 20;
 
 //--- Control ---//
 
-state = "Wildcard"; //Wildcard, Investigator, Trickster
+state = "intro"; //Wildcard, Investigator, Trickster
 attack = 0;
-alarm[0] =  30;
 
+//Push
+push_meter = 0;
 
 // Zio - Investigator
 zio = 0;
+
+// Megidolaon - Wildcard
+megidolaon = 0;
+
+audio_play_sound(so_persona_bgm,2,2);
+
 randomize();
