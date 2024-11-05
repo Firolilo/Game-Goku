@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_terrain",
+    "path": "objects/o_terrain/o_terrain.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
