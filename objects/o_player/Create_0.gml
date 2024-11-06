@@ -1,5 +1,5 @@
 // ------------ Stats ---------------
-hpMax=60;
+hpMax=6;
 hp = hpMax;
 invi_time=45;
 fall_max = 11;
@@ -11,7 +11,8 @@ ki_trans=0;
 
 alpha_mode=0;
 alpha_count=0;
-
+// ------ boss
+boss_killed = 0;
 // ---------- Cards -------
 	
 cards_alpha=1;
@@ -80,10 +81,3 @@ angular_acc=0;
 canAtt = 1;
 combo_count=0;
 att_moment=0;
-
-clow_card_1=instance_create_layer(224,480,"terrain",o_clow_card);
-clow_card_1.val=1;
-clow_card_2=instance_create_layer(416,480,"terrain",o_clow_card);
-clow_card_2.val=2;
-clow_card_3=instance_create_layer(608,480,"terrain",o_clow_card);
-clow_card_3.val=3;

@@ -6,7 +6,7 @@ function c_actions(){
 	
 	if(!alpha_mode){
 		
-		if((gamepad_button_check_pressed(0,gp_face3) or keyboard_check_pressed(vk_control)) && canAtt){
+		if((gamepad_button_check_pressed(0,gp_face3) or keyboard_check_pressed(vk_control)) && canAtt && !wall_state && !grappling_active){
 			canAtt=0;
 		}
 		if(!canAtt){
@@ -14,7 +14,7 @@ function c_actions(){
 				if(collision_rectangle(x+20,y-24,x+70,y-50,o_enemy_body,0,1)){
 					if(!att_moment){
 						cards_alpha=1;
-						if(ki<3 and ki_level<3){ 
+						if(ki<3 and ki_level<3 and ki_trans<3){ 
 							ki+=1;
 							see_card=1;
 							alarm[0]=-1;
@@ -29,7 +29,7 @@ function c_actions(){
 				if(collision_rectangle(x-20,y-24,x-70,y-50,o_enemy_body,0,1)){
 					if(!att_moment){
 						cards_alpha=1;
-						if(ki<3 and ki_level<3){ 
+						if(ki<3 and ki_level<3 and ki_trans<3){ 
 							ki+=1;
 							see_card=1;
 							alarm[0]=-1;
@@ -81,7 +81,7 @@ function c_actions(){
 	
 	// SI LO MANTIENE presionand y no tiene carta, no se activa el card anima
 	if((gamepad_button_check(0,gp_shoulderr) or keyboard_check(vk_shift)) and ki_level>0){
-		if(gamepad_button_check_pressed(0,gp_shoulderr) or keyboard_check_pressed(vk_shift))card_anima=ki_level;
+		if(gamepad_button_check_pressed(0,gp_shoulderr) or keyboard_check_pressed(vk_shift) or ki_level==1)card_anima=ki_level;
 		alpha_mode=1;
 		alpha_count++;
 		if(alpha_count==180){
@@ -134,6 +134,16 @@ function c_actions(){
 					xd=clow_card_3.y;
 					clow_card_2.y=xd;
 					clow_card_2.can=1;
+				break;
+			}
+		}
+		else{
+			switch(ki_trans){
+				case 1:
+					clow_card_1.y=400;
+				break;
+				case 2:
+					clow_card_2.y=400;
 				break;
 			}
 		}

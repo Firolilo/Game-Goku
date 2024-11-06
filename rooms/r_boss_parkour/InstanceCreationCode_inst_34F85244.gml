@@ -1,0 +1,1 @@
+target_room = r_wait_room;

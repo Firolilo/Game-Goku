@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_solid_mobile",
   "spriteId": {
-    "name": "s_solid",
-    "path": "sprites/s_solid/s_solid.yy",
+    "name": "s_solid_mobile",
+    "path": "sprites/s_solid_mobile/s_solid_mobile.yy",
   },
   "solid": true,
   "visible": true,

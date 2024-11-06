@@ -189,14 +189,21 @@ if(rest_fast && alpha_mode){
 	c_actions();
 	
 
-
 }
 else{
-	image_alpha-=0.0075;
+	image_alpha-=0.005;
 	if(image_alpha<=0){
 		hp=hpMax;
 		dead=0;
 		invi=0;
+		image_alpha=1;
+		ki=0;
+		ki_level=0;
+		ki_trans=0;
+		card_anima=0;
+		clow_card_1.y=480;
+		clow_card_2.y=480;
+		clow_card_3.y=480;
 	}
 
 }

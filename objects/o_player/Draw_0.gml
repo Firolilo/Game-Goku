@@ -1,44 +1,51 @@
-if(canAtt){
-	if(ground){
+if(!dead){
 	
-			if(x_speed==0){
-				if(!crouch)
-				sprite_index=s_sakura_idle;
-				else
-				sprite_index=s_crouch;
-			}
-			else{
-				if(x_speed_fast_max==x_speed_max)
-					sprite_index=s_sakura_run;
-				else if(x_speed_slow_max==x_speed_max)
-					sprite_index=s_sakura_walk;
-			}
+	
+	if(canAtt){
+		if(ground){
+	
+				if(x_speed==0){
+					if(!crouch)
+					sprite_index=s_sakura_idle;
+					else
+					sprite_index=s_sakura_crouch;
+				}
+				else{
+					if(x_speed_fast_max==x_speed_max)
+						sprite_index=s_sakura_run;
+					else if(x_speed_slow_max==x_speed_max)
+						sprite_index=s_sakura_walk;
+				}
+		}
+		else{
+			if(y_speed>=0 and !wall_state) sprite_index=s_sakura_fall;
+			if(wall_state and (wall_r==right)) sprite_index=s_sakura_wall;
+			if(wall_state and (wall_r!=right)) sprite_index=s_sakura_wall_op;
+			if(y_speed<0 and !wall_state) sprite_index=s_sakura_jump;
+		}
 	}
 	else{
-		if(y_speed>=0) sprite_index=s_fall;
-		else sprite_index=s_jump;
+		switch(combo_count){
+			case 0:
+				sprite_index=s_sakura_melee1;
+			break;
+			case 1:
+				sprite_index=s_sakura_melee2;
+			break;
+			case 2:
+				sprite_index=s_sakura_melee3;
+			break;
+		}
 	}
+
+	if(right) image_xscale=1;
+	else image_xscale=-1;
 }
 else{
-	switch(combo_count){
-		case 0:
-			sprite_index=s_melee1;
-		break;
-		case 1:
-			sprite_index=s_melee2;
-		break;
-		case 2:
-			sprite_index=s_melee3;
-		break;
-	}
+	sprite_index=s_sakura_dead;
 }
 
-
-if(right) image_xscale=1;
-else image_xscale=-1;
-
-
-mask_index=s_player_mask;
+if(!crouch) mask_index=s_player_mask; else mask_index=s_player_crouch_mask;
 
 
 //224,480 izquierda
@@ -97,6 +104,65 @@ if(alpha_mode){
 		break;
 	}
 }
+switch(hp){
+	case 0:
+		health_1.visible=0;
+		health_2.visible=0;
+		health_3.visible=0;
+		health_4.visible=0;
+		health_5.visible=0;
+		health_6.visible=0;
+	break;
+	case 1:
+		health_1.visible=1;
+		health_2.visible=0;
+		health_3.visible=0;
+		health_4.visible=0;
+		health_5.visible=0;
+		health_6.visible=0;
+	break;
+	case 2:
+		health_1.visible=1;
+		health_2.visible=1;
+		health_3.visible=0;
+		health_4.visible=0;
+		health_5.visible=0;
+		health_6.visible=0;
+	break;	
+	case 3:
+		health_1.visible=1;
+		health_2.visible=1;
+		health_3.visible=1;
+		health_4.visible=0;
+		health_5.visible=0;
+		health_6.visible=0;
+	break;
+	case 4:
+		health_1.visible=1;
+		health_2.visible=1;
+		health_3.visible=1;
+		health_4.visible=1;
+		health_5.visible=0;
+		health_6.visible=0;
+	break;
+	case 5:
+		health_1.visible=1;
+		health_2.visible=1;
+		health_3.visible=1;
+		health_4.visible=1;
+		health_5.visible=1;
+		health_6.visible=0;
+	break;
+	case 6:
+		health_1.visible=1;
+		health_2.visible=1;
+		health_3.visible=1;
+		health_4.visible=1;
+		health_5.visible=1;
+		health_6.visible=1;
+	break;
+}
+
 
 c_card_clow();
 

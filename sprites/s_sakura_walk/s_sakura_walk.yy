@@ -31,6 +31,8 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ae57618-ea0f-46af-84c3-655ce2678e7e",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea2acffa-7614-4578-b2b5-dd3dd7a092da",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"99a7531a-4c07-49ed-8110-bd853e62195e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"906a488f-4249-4b70-8d7c-12a5f0aa796e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7167ac5a-9a89-4c08-9f41-23b6f4702d82",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -42,7 +44,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 5.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,6 +52,8 @@
             {"id":"3442e2f4-1886-4e17-a635-00a7540e75c1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2ae57618-ea0f-46af-84c3-655ce2678e7e","path":"sprites/s_sakura_walk/s_sakura_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5d4deaed-3f59-404e-8dac-98ab4bfc0b5f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea2acffa-7614-4578-b2b5-dd3dd7a092da","path":"sprites/s_sakura_walk/s_sakura_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0cd76bc8-56cb-44db-b23b-df779cbec29d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"99a7531a-4c07-49ed-8110-bd853e62195e","path":"sprites/s_sakura_walk/s_sakura_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c5ef4e0f-96e6-47d5-bf21-b934e58071ed","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"906a488f-4249-4b70-8d7c-12a5f0aa796e","path":"sprites/s_sakura_walk/s_sakura_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f2c12b1b-afc6-4fe6-bf7c-3c27a4ca1395","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7167ac5a-9a89-4c08-9f41-23b6f4702d82","path":"sprites/s_sakura_walk/s_sakura_walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -77,7 +81,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player_Sprites",
-    "path": "folders/Sprites/Player_Sprites.yy",
+    "name": "sakura",
+    "path": "folders/Sprites/Player_Sprites/sakura.yy",
   },
 }

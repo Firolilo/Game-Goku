@@ -1,2 +1,2 @@
-x_player_next = 128;
-y_player_next = 320;
+x_player_next = 832;
+y_player_next = 352;
