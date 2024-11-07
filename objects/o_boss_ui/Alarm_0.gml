@@ -12,15 +12,16 @@ switch(state)
 			y = o_player.y;
 			if(side_right)
 			{
-				path_start(p_ui_move_to_left, 20, path_action_stop,0);	
+				path_start(p_ui_move_to_left, 15, path_action_stop,0);	
 			}
 			else
 			{
-				path_start(p_ui_move_to_right, 20, path_action_stop,0);	
+				path_start(p_ui_move_to_right, 15, path_action_stop,0);	
 			}
 		break;
 		case 2:
 			state = "dash";
+			dmg = 0;
 			audio_play_sound(so_kamea,1,0)
 			if(side_right)
 			{

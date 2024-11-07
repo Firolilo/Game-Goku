@@ -1,41 +1,47 @@
 if(!dead){
 	
+	if(!baile)
+	{
+		if(canAtt){
+			if(ground){
 	
-	if(canAtt){
-		if(ground){
-	
-				if(x_speed==0){
-					if(!crouch)
-					sprite_index=s_sakura_idle;
-					else
-					sprite_index=s_sakura_crouch;
-				}
-				else{
-					if(x_speed_fast_max==x_speed_max)
-						sprite_index=s_sakura_run;
-					else if(x_speed_slow_max==x_speed_max)
-						sprite_index=s_sakura_walk;
-				}
+					if(x_speed==0){
+						if(!crouch)
+						sprite_index=s_sakura_idle;
+						else
+						sprite_index=s_sakura_crouch;
+					}
+					else{
+						if(x_speed_fast_max==x_speed_max)
+							sprite_index=s_sakura_run;
+						else if(x_speed_slow_max==x_speed_max)
+							sprite_index=s_sakura_walk;
+					}
+			}
+			else{
+				if(y_speed>=0 and !wall_state) sprite_index=s_sakura_fall;
+				if(wall_state and (wall_r==right)) sprite_index=s_sakura_wall;
+				if(wall_state and (wall_r!=right)) sprite_index=s_sakura_wall_op;
+				if(y_speed<0 and !wall_state) sprite_index=s_sakura_jump;
+			}
 		}
 		else{
-			if(y_speed>=0 and !wall_state) sprite_index=s_sakura_fall;
-			if(wall_state and (wall_r==right)) sprite_index=s_sakura_wall;
-			if(wall_state and (wall_r!=right)) sprite_index=s_sakura_wall_op;
-			if(y_speed<0 and !wall_state) sprite_index=s_sakura_jump;
+			switch(combo_count){
+				case 0:
+					sprite_index=s_sakura_melee1;
+				break;
+				case 1:
+					sprite_index=s_sakura_melee2;
+				break;
+				case 2:
+					sprite_index=s_sakura_melee3;
+				break;
+			}
 		}
 	}
-	else{
-		switch(combo_count){
-			case 0:
-				sprite_index=s_sakura_melee1;
-			break;
-			case 1:
-				sprite_index=s_sakura_melee2;
-			break;
-			case 2:
-				sprite_index=s_sakura_melee3;
-			break;
-		}
+	else
+	{
+		sprite_index=s_sakura_peter;
 	}
 
 	if(right) image_xscale=1;

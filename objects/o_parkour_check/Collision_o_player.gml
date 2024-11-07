@@ -47,7 +47,7 @@ else
 	}
 }
 
-if(end_p) instance_create_layer(448,96,"enemy", o_boss_parkour);
+if(end_p and !instance_exists(o_boss_parkour)) instance_create_layer(448,96,"enemy", o_boss_parkour);
 
 if(finish) instance_destroy(o_boss_parkour);
 o_player.x = x_player_next;

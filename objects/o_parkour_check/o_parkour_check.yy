@@ -7,7 +7,7 @@
     "path": "sprites/s_parkour_check/s_parkour_check.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

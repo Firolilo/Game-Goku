@@ -4,7 +4,7 @@ hp = hpMax;
 invi_time=45;
 fall_max = 11;
 jump_power = 10;
-dmg=1;
+dmg=10;
 ki_level=0;
 ki=0;
 ki_trans=0;
@@ -13,6 +13,9 @@ alpha_mode=0;
 alpha_count=0;
 // ------ boss
 boss_killed = 0;
+
+// --- baile
+baile = 0;
 // ---------- Cards -------
 	
 cards_alpha=1;

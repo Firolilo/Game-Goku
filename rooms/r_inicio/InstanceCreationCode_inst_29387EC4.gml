@@ -1,1 +1,1 @@
-target_room = r_wait_room;
+target_room = r_tuto; 

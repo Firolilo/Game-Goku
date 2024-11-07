@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_cluod_mobile",
   "spriteId": {
-    "name": "s_cloud",
-    "path": "sprites/s_cloud/s_cloud.yy",
+    "name": "s_cloud_mobile",
+    "path": "sprites/s_cloud_mobile/s_cloud_mobile.yy",
   },
   "solid": false,
   "visible": true,

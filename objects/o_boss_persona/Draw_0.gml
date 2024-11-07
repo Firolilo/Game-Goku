@@ -1,25 +1,36 @@
-switch(state)
+if(!dead)
 {
-	case "intro":
-		sprite_index = s_yuki_intro;
-	break;
-	case "Wildcard":
-		if (attack) sprite_index = s_yuki_attack;
-		else sprite_index = s_yuki_stand;
-	break;
-	case "Investigator":
-		if (attack) sprite_index = s_narukami_attack;
-		else sprite_index = s_narukami_stand;
-	break;
-	case "Trickster":
-		if (attack) sprite_index = s_joker_attack;
-		else sprite_index = s_joker_stand;
-	break;
+
+	switch(state)
+	{
+		case "intro":
+			sprite_index = s_yuki_intro;
+		break;
+		case "Wildcard":
+			if (attack) sprite_index = s_yuki_attack;
+			else sprite_index = s_yuki_stand;
+		break;
+		case "Investigator":
+			if (attack) sprite_index = s_narukami_attack;
+			else sprite_index = s_narukami_stand;
+		break;
+		case "Trickster":
+			if (attack) sprite_index = s_joker_attack;
+			else sprite_index = s_joker_stand;
+		break;
+	}
+	mask_index = s_player_mask;
+		
 }
-mask_index = s_player_mask;
-draw_text(10,10,state)
-draw_text(10,30,attack)
-draw_text(10,50,push_meter)
-draw_text(10,70,alarm[1]);
+else
+{
+	sprite_index = s_yuki_dead;
+}
+
+if(hp > 0)
+{
+	thp = (hp / hpMax) * 100;
+	draw_sprite_ext(s_persona_hpbar,0,64,40,thp*8.3,1,0,c_white,1);
+}
 
 draw_self();

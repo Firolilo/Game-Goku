@@ -6,3 +6,4 @@ steak = 0;
 end_p = 0;
 
 finish = 0;
+

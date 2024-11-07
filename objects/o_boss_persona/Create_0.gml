@@ -1,12 +1,15 @@
 //--- Stats ---//
 
-hp = 250;
+hpMax = 600;
+hp = hpMax;
 dmg  = 1;
 
 //--- Control ---//
 
 state = "intro"; //Wildcard, Investigator, Trickster
 attack = 0;
+
+dead = 0;
 
 //Push
 push_meter = 0;

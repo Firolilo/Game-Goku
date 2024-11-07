@@ -1,0 +1,1 @@
+text = "Agachate con S o STICK DERECHO ABAJO ";

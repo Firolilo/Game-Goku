@@ -1,0 +1,1 @@
+text = "Salta con ESPACIO, X (ps) o A (xbox)";

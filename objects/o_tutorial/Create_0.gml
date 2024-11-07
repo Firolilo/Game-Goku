@@ -1,0 +1,2 @@
+text = ""; 
+distance = 100;

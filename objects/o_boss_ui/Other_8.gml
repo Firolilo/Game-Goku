@@ -1,3 +1,5 @@
+dmg = 1;
+
 if(side_right) side_right = 0; else side_right = 1;
 
 if(state == "dash")

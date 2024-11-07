@@ -1,0 +1,1 @@
+target_room = global.previous_room;
