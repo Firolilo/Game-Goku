@@ -1,6 +1,6 @@
 //--- Stats ---//
 
-hpMax = 400;
+hpMax = 1;  //400
 hp = hpMax;
 
 dmg = 1;

@@ -1,0 +1,1 @@
+audio_play_sound(so_intro,2,5);
