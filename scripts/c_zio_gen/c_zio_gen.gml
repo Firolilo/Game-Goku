@@ -8,8 +8,8 @@ function c_zio_gen() {
 	}
 	else
 	{
-		random_y = choose(y1, y2, y3, y4, y5); // Randomly choose y position
-		instance_create_layer(x_def, random_y, "att", o_zio);
+		random_y = choose(y1, y2, y3, y4, y5);
+		instance_create_layer(x1, random_y, "att", o_zio);
 
 		alarm[4] = 15;
 		zio++;

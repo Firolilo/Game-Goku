@@ -1,21 +1,8 @@
-y_speed = 0;
-x_speed=-4;
+y_speed = choose(-5, 2, -1, 1, 2, 5);
 
-val=irandom_range(1,3);
-
-switch(val){
-	case 1:
-		y_speed=-5;
-	break;
-	case 2:
-		y_speed=-1;
-	break;
-	case 3:
-		y_speed=2;
-	break;
-}
+x_speed= choose(-4, -2, 0, 2, 4);
 
 co=irandom_range(1,7);
 
 //alarm[0]=irandom_range(5,10);
-alarm[0]=irandom_range(99,100);
+alarm[0]=irandom_range(90,100);

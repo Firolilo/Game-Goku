@@ -1,1 +1,2 @@
-text = "Recuerda, muevete con WASD o el stick izquierdo";
+text = "Las Alas Alrededor Tuyo Es Tu Vida";
+spr=s_hh;

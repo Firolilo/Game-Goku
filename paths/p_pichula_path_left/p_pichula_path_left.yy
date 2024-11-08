@@ -11,6 +11,6 @@
   ],
   "parent": {
     "name": "Paths",
-    "path": "folders/Paths.yy",
+    "path": "folders/Objects/Level/Paths.yy",
   },
 }

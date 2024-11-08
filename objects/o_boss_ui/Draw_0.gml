@@ -42,7 +42,9 @@ mask_index = s_player_mask;
 if(hp > 0)
 {
 	thp = (hp / hpMax) * 100;
-	draw_sprite_ext(s_ui_hpbar,0,64,40,thp*8.3,1,0,c_white,1);
+	draw_sprite_ext(s_ui_hpbar,0,790,411,thp,1,0,c_white,1);
 }
+
+draw_sprite(s_HUD_ui,0,736,384);
 
 draw_self();

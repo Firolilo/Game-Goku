@@ -4,14 +4,14 @@ function c_actions(){
 	
 	// melee attack
 	
-	if(!alpha_mode){
+	if(!alpha_mode and !crouch){
 		
 		if((gamepad_button_check_pressed(0,gp_face3) or keyboard_check_pressed(vk_control)) && canAtt && !wall_state && !grappling_active){
 			canAtt=0;
 		}
 		if(!canAtt){
 			if(right){
-				if(collision_rectangle(x+20,y-24,x+70,y-50,o_enemy_body,0,1)){
+				if(collision_rectangle(x-10,y-24,x+70,y-50,o_enemy_body,0,1)){
 					if(!att_moment){
 						cards_alpha=1;
 						if(ki<3 and ki_level<3 and ki_trans<3){ 
@@ -20,13 +20,14 @@ function c_actions(){
 							alarm[0]=-1;
 							alarm[0]=30;
 						}
+						audio_play_sound(so_hit,2,0);
 						att_moment=1;
 						o_enemy_body.hp-=dmg;
 					}
 				}
 			}
 			else{
-				if(collision_rectangle(x-20,y-24,x-70,y-50,o_enemy_body,0,1)){
+				if(collision_rectangle(x+10,y-24,x-70,y-50,o_enemy_body,0,1)){
 					if(!att_moment){
 						cards_alpha=1;
 						if(ki<3 and ki_level<3 and ki_trans<3){ 
@@ -35,6 +36,7 @@ function c_actions(){
 							alarm[0]=-1;
 							alarm[0]=30;
 						}
+						audio_play_sound(so_hit,2,0);
 						att_moment=1;
 						o_enemy_body.hp-=dmg;
 					}
@@ -82,6 +84,7 @@ function c_actions(){
 	// SI LO MANTIENE presionand y no tiene carta, no se activa el card anima
 	if((gamepad_button_check(0,gp_shoulderr) or keyboard_check(vk_shift)) and ki_level>0){
 		if(gamepad_button_check_pressed(0,gp_shoulderr) or keyboard_check_pressed(vk_shift) or ki_level==1)card_anima=ki_level;
+		if(hp < hpMax and alpha_mode == 0 and ki_trans == 3) hp++;
 		alpha_mode=1;
 		alpha_count++;
 		if(alpha_count==180){

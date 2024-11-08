@@ -1,1 +1,2 @@
-text = "Recuerda, muevete con WASD o el stick izquierdo";
+text = "Puedes Hacer Wall Jump En";
+spr=s_walljump;

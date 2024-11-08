@@ -1,1 +1,2 @@
-text = "Salta con ESPACIO, X (ps) o A (xbox)";
+text = "Golpea Ñetes Con";
+spr=s_btn_punch;

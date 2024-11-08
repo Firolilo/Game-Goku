@@ -13,7 +13,6 @@ else
 	baile = 0;	
 }
 
-	
 	if(!baile)
 	{
 		c_actions();
@@ -114,10 +113,7 @@ else
 	}
 // ------- MOVIMIENTO -------
 	if(x_speed != 0)
-	{
-
-		instance_create_layer(x+weapon_modx,y+weapon_mody,"part_back",o_particle);
-		
+	{	
 		if(x_speed > 0) move_contact_solid(0,x_speed);
 		else if (x_speed < 0) move_contact_solid(180,abs(x_speed));
 	}
@@ -147,7 +143,11 @@ else
 	}
 
 // ---------- CHECKS ---------
+
+	if(invi) instance_create_layer(x,y+weapon_mody,"part_back",o_particle);
+	
 	if(hp<=0){
+		audio_play_sound(so_static,2,10);
 		dead=1;
 		invi=1;
 		alarm[1]=-1;

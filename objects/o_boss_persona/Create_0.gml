@@ -1,6 +1,6 @@
 //--- Stats ---//
 
-hpMax = 600;
+hpMax = 550;
 hp = hpMax;
 dmg  = 1;
 

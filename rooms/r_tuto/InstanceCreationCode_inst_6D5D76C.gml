@@ -1,1 +1,0 @@
-text = "Recuerda, muevete con WASD o el \n stick izquierdo";
